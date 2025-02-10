@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle, #0a0a2a 10%, #1a1a40 40%, #2a2a60 80%);
+    color: white;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+/* Glowing Effect */
+.glow-box {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    filter: blur(15px);
+}
+
+.glow-box.one {
+    top: 10%;
+    left: 15%;
+}
+
+.glow-box.two {
+    top: 40%;
+    right: 20%;
+}
+
+.glow-box.three {
+    bottom: 15%;
+    left: 50%;
+}
+
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 100px 5%;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text h1 span {
+    color: #6a5acd;
+    font-weight: 600;
+}
+
+.cta-btn {
+    background: #6a5acd;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 300px;
+    animation: float 3s infinite ease-in-out;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 5%;
+    gap: 15px;
+}
+
+.feature-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    max-width: 180px;
+}
+
+
+.icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
